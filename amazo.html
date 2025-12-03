@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuj's Online Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .outer-box {
+      width: 90%;
+      max-width: 950px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    /* Navigation bar */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #232f3e;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Center image */
+    .center-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .center-image img {
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Title */
+    .outer-title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    /* Product grid */
+    .inner-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .inner-box {
+      background-color: #f9fbfd;
+      border: 1px solid #e0e7f0;
+      border-radius: 8px;
+      padding: 12px;
+      transition: 0.3s;
+    }
+
+    .inner-box:hover {
+      background-color: #f1f6ff;
+    }
+
+    .inner-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #0a2a43;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .item {
+      background-color: white;
+      border: 1px dashed #d7e6f5;
+      border-radius: 6px;
+      padding: 8px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .item:hover {
+      background-color: #e8f0ff;
+      border-color: #aac7ff;
+    }
+
+    @media (max-width: 540px) {
+      .inner-grid { grid-template-columns: 1fr; }
+      .nav-bar { flex-direction: column; text-align: center; }
+      .nav-links { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="outer-box">
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <div class="nav-logo">🛍 Anuj's Shop</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Deals</a>
+        <a href="#">Cart</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+
+    <!-- Center Image -->
+    <div class="center-image">
+      <img src="https://i.ibb.co/q3BJ634C/Screenshot-2025-11-07-at-8-24-48-PM.png" alt="Shop Banner">
+    </div>
+
+    <!-- Title -->
+    <h2 class="outer-title">Top Categories — Laptops, Earbuds, Watches & Mobiles</h2>
+
+    <!-- Product Grid -->
+    <div class="inner-grid">
+
+      <div class="inner-box">
+        <div class="inner-header">💻 Laptops</div>
+        <div class="items">
+          <div class="item">HP</div>
+          <div class="item">Dell</div>
+          <div class="item">MacBook Air</div>
+          <div class="item">Lenovo</div>
+        </div>
+      </div>
+
+      <div class="inner-box">
+        <div class="inner-header">🎧 Earbuds</div>
+        <div class="items">
+          <div class="item">Boat</div>
+          <div class="item">JBL</div>
+          <div class="item">OnePlus Buds</div>
+          <div class="item">Apple AirPods</div>
+        </div>
+      </div>
+
+      <div class="inner-box">
+        <div class="inner-header">⌚ Smart Watches</div>
+        <div class="items">
+          <div class="item">Noise</div>
+          <div class="item">Fire-Boltt</div>
+          <div class="item">Apple Watch</div>
+          <div class="item">Samsung Galaxy</div>
+        </div>
+      </div>
+
+      <div class="inner-box">
+        <div class="inner-header">📱 Mobiles</div>
+        <div class="items">
+          <div class="item">iPhone</div>
+          <div class="item">Samsung</div>
+          <div class="item">OnePlus</div>
+          <div class="item">Vivo</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

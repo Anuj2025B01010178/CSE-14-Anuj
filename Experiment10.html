@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce</title>
+    <style>
+    .container{
+        width:100%;
+        height: 800px;
+        border: 4px solid black;
+
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        color: white;
+        
+
+    }
+    .navbar h1{
+        margin-right: 450px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+     .navbar a{
+        display: flex;
+        align-items: center;
+     }  
+    
+    .nav-links {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+   }
+
+    .nav-links li a {
+        
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 15px;
+    display: block;
+   }
+    .cart {
+        margin-left: 450px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .hamburger-menu {
+    display: none; /* Hide on desktop */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+}
+
+.bar {
+    display: block;
+    align-items: center;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+#menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+     @media only screen and (max-width: 600px){
+        .navbar h1{
+        margin-right: 100px;
+        margin-left: 5px;}
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px; /* Adjust based on navbar height */
+        left: 0;
+        background-color: #444;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 15px;
+    }
+
+    .hamburger-menu {
+        margin-top: 30px;
+        display: flex; /* Show on mobile */
+        align-items: center;
+    }
+
+    /* Toggle menu visibility using the checkbox state */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+        align-items: center;
+    }
+    .cart {
+        margin-left: 100px;
+        margin-right: 15px;
+}
+   }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar" >
+        <h1>ShopEase</h1>
+         <input type="checkbox" id="menu-toggle"> 
+        <label for="menu-toggle" class="hamburger-menu">
+            <span >&#9776</span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+            <div class="cart">
+             <a>Cart  🛒</a></div>
+             <a> Login</a>
+    </div>
+    <h1>Welcome to ShopEase!</h1>
+    <p>Your one-stop destination for all shopping needs.</p>
+    </div>
+     <ul>
+      <li>Name:Anuj Kumar Kushwaha</li>
+      <li>Admission No:2025B01010178</li>
+    </ul>
+</body>
+
+</html>
